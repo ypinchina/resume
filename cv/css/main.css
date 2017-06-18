@@ -10,81 +10,71 @@ li {
 a {
     text-decoration:none
 }
+
+@font-face {font-family: "iconfont";
+    src: url('iconfont.eot?t=1497619690075'); /* IE9*/
+    src: url('iconfont.eot?t=1497619690075#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff?t=1497619690075') format('woff'), /* chrome, firefox */
+    url('iconfont.ttf?t=1497619690075') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('iconfont.svg?t=1497619690075#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zhuye:before { content: "\e610"; }
+
+.icon-linkin:before { content: "\e608"; }
+
+.icon-youjiantou:before { content: "\e60b"; }
+
+.icon-jiaoyu:before { content: "\e63c"; }
+
+.icon-weizhi:before { content: "\e634"; }
+
+.icon-nodejs:before { content: "\e6ba"; }
+
+.icon-ex:before { content: "\e600"; }
+
+.icon-zuojiantou:before { content: "\e82c"; }
+
+.icon-webapp:before { content: "\e60e"; }
+
+.icon-boke4:before { content: "\e60f"; }
+
+.icon-gerenxinxi:before { content: "\e657"; }
+
+.icon-59:before { content: "\e684"; }
+
+.icon-boke:before { content: "\e630"; }
+
+.icon-jineng-copy:before { content: "\e651"; }
+
+.icon-douban-copy:before { content: "\e60a"; }
+
+.icon-youjian:before { content: "\e601"; }
+
+.icon-weibiaoti3:before { content: "\e65e"; }
+
+.icon-shangjiantou:before { content: "\e7d9"; }
+
+.icon-Webpack:before { content: "\e6c5"; }
+
+.icon-h5-copy:before { content: "\e502"; }
+
+.icon-doubleArrDn-stroke:before { content: "\e745"; }
 html,body {
     width:100%;
     height:100%;
     color:#333;
     font:400 14px/1.5 Microsoft YaHei,sans-serif
 }
-@font-face {
-    font-family:"iconfont";
-    src:url("../fonts/iconfont.eot?t=1486564141126");
-    src:url("../fonts/iconfont.eot?t=1486564141126#iefix") format("embedded-opentype"),url("../fonts/iconfont.woff?t=1486564141126") format("woff"),url("../fonts/iconfont.ttf?t=1486564141126") format("truetype"),url("../fonts/iconfont.svg?t=1486564141126#iconfont") format("svg")
-}
-.iconfont {
-    font-family:"iconfont" !important;
-    font-size:16px;
-    font-style:normal;
-    -webkit-font-smoothing:antialiased;
-    -moz-osx-font-smoothing:grayscale
-}
-.iconfont:before {
-    vertical-align:middle
-}
-.iconfont:after {
-    content:'';
-    display:inline-block;
-    height:100%;
-    vertical-align:middle
-}
-.icon-mobile:before {
-    content:"\e6b2"
-}
-.icon-mianshi:before {
-    content:"\e65b"
-}
-.icon-zhandou:before {
-    content:"\e74f"
-}
-.icon-nodejs:before {
-    content:"\e989"
-}
-.icon-jquery-copy:before {
-    content:"\e600"
-}
-.icon-shouye:before {
-    content:"\e629"
-}
-.icon-hire:before {
-    content:"\e6fd"
-}
-.icon-oGDwRZJ01:before {
-    content:"\e633"
-}
-.icon-css:before {
-    content:"\e61f"
-}
-.icon-react:before {
-    content:"\e770"
-}
-.icon-inauguration:before {
-    content:"\e877"
-}
-.icon-daima:before {
-    content:"\e620"
-}
-.icon-qianjin:before {
-    content:"\e602"
-}
-.icon-github:before {
-    content:"\e601"
-}
-.icon-down:before {
-    content:"\e70f"
-}
-.icon-linkedin:before {
-    content:"\e6e2"
-}
+
 .wrap,.container,.column {
     width:100%;
     height:100%
@@ -109,6 +99,16 @@ html,body {
 .title {
     font-size:30px
 }
+.title p{
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+.title span{
+    font-size: 16px;
+    font-family: Lato,"Microsoft YaHei",sans-serif;
+    color: #eeedff;
+}
 .page1 {
     text-align:center
 }
@@ -123,7 +123,7 @@ html,body {
     top:0;
     width:100%;
     height:100%;
-    background-color:#8bb8d1;
+    background-color:#6d92d3;
 }
 .page1 .tit1 {
     position:absolute;
@@ -134,7 +134,9 @@ html,body {
     color:#fff
 }
 .page1 .tit1 img{
-   border: 5px solid #f00;
+    width: 180px;
+    height: 180px;
+   border: 5px solid #e2f2fd;
     -webkit-border-radius:100%;
     -moz-border-radius:100%;
     border-radius:100%;
@@ -624,6 +626,7 @@ html,body {
     text-align:center
 }
 .info-tg .info-arrow {
+    line-height: 54px;
     height:100%;
     color:#fff;
     font-size:20px
@@ -656,6 +659,10 @@ html,body {
  .my_info li {
     padding: 12px;
 }
+.my_info li span{
+    margin-right: 5px;
+    font-size: 18px;
+}
 
  .my_info a {
     color: #fff;
@@ -667,32 +674,8 @@ html,body {
 
 }
 
- .my_info li span {
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    background-repeat: no-repeat;
-    margin-right: 5px;
 
-}
 
- .my_info li:nth-child(2) span {
-    background: url("../images/person.ico");
-}
-
- .my_info li:nth-child(3) span {
-    background: url("../images/location.ico");
-    width: 14px;
-}
-
- .my_info li:nth-child(4) span {
-    background: url("../images/blog.ico");
-}
-
- .my_info li:nth-child(5) span {
-    background: url("../images/Nmail.ico");
-    height: 14px;
-}
 .nav-right {
     height:348px;
     position:fixed;
@@ -773,11 +756,16 @@ html,body {
 @media (max-width:768px) {
     .title {
         font-size:.25rem
+}
+    .title p{
+        font-size: 14px;
     }
     .page1 .tit1 {
         left:0;
-        top:2rem;
-        height:1.5rem
+        top:0;
+        bottom: 0;
+        margin: auto;
+        height:300px;
     }
     .page1 .tit1>h2 {
         font-size:.3rem
@@ -965,4 +953,6 @@ html,body {
         line-height:.5rem;
         font-size:.12rem
     }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
